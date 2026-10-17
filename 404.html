@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Plan Failed | Aswin R</title>
+    <style>
+      :root {
+        background: #0a0a0a;
+        color: #e6dfcb;
+        font-family: "IBM Plex Mono", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        min-height: 100svh;
+        margin: 0;
+        place-items: center;
+        overflow: hidden;
+      }
+
+      main {
+        position: relative;
+        width: min(90vw, 900px);
+        border-left: 2px solid #d10a0a;
+        padding: clamp(1.5rem, 5vw, 4rem);
+      }
+
+      p {
+        margin: 0 0 1.2rem;
+        color: #b08d57;
+        font-size: 0.63rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+      }
+
+      h1 {
+        max-width: 7ch;
+        margin: 0;
+        font-family: "Anton", Impact, sans-serif;
+        font-size: clamp(4.5rem, 14vw, 11rem);
+        font-weight: 400;
+        line-height: 0.78;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 2.5rem;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 0.4rem;
+        color: #e6dfcb;
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+      }
+
+      a:focus-visible {
+        outline: 2px solid #b08d57;
+        outline-offset: 6px;
+      }
+
+      .mask {
+        position: absolute;
+        right: -3%;
+        bottom: -22%;
+        width: min(30vw, 230px);
+        color: #d10a0a;
+        opacity: 0.78;
+      }
+
+      .face {
+        fill: currentColor;
+      }
+
+      .cut {
+        fill: #0a0a0a;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>OPERATION / NOT FOUND</p>
+      <h1>The plan failed.</h1>
+      <a href="/">RETURN TO THE VAULT</a>
+      <svg class="mask" viewBox="0 0 170 220" aria-hidden="true">
+        <path class="face" d="M85 9C52 10 27 33 24 76l8 66c3 36 25 64 53 70 28-6 50-34 53-70l8-66C143 33 118 10 85 9Z" />
+        <path class="cut" d="M40 88c13-14 28-16 39-3-11 15-27 16-39 3Zm51-3c11-13 26-11 39 3-12 13-28 12-39-3ZM52 161c20 11 46 11 66 0-10 19-56 19-66 0Z" />
+      </svg>
+    </main>
+  </body>
+</html>
